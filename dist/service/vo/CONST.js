@@ -1,0 +1,68 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.CONST = void 0;
+class CONST {
+}
+exports.CONST = CONST;
+//TARGET_TYPE
+// uint8 public constant TARGET_TYPE_CRYPTO = 0;
+// uint8 public constant TARGET_TYPE_STOCKS = 1;
+// uint8 public constant TARGET_TYPE_FOREX = 2;
+// uint8 public constant TARGET_TYPE_INDICES = 3;
+// uint8 public constant TARGET_TYPE_COMMODITIES = 4;
+//
+// //TARGET_STATUS
+// uint8 public constant TARGET_STATUS_NORNAL = 0;
+// uint8 public constant TARGET_STATUS_DISABLE_OPEN = 1;
+// uint8 public constant TARGET_STATUS_DISABLE_CLOSE = 2;
+// uint8 public constant TARGET_STATUS_PAUSE = 3;
+//
+// //TRADE_TYPE
+// uint8 public constant TRADE_TYPE_OPEN = 1;
+// uint8 public constant TRADE_TYPE_CLOSE = 2;
+//
+// //TRADE_STATE
+// uint8 public constant TRADE_STATE_PENDING = 0;
+// uint8 public constant TRADE_STATE_DONE = 1;
+// uint8 public constant TRADE_STATE_REJECT = 2;
+//
+// //POSITION_EXIT_REASON
+// uint8 public constant POSITION_EXIT_REASON_NULL = 0;
+// uint8 public constant POSITION_EXIT_REASON_USER_CLOSE = 1;
+// uint8 public constant POSITION_EXIT_REASON_TP = 2;
+// uint8 public constant POSITION_EXIT_REASON_SL = 3;
+// uint8 public constant POSITION_EXIT_REASON_LQ = 4;
+//
+// //POSITION_TYPE
+// uint8 public constant POSITION_TYPE_NULL = 0;
+// uint8 public constant POSITION_TYPE_MARKET = 1;
+// uint8 public constant POSITION_TYPE_BOOST = 2;
+// uint8 public constant PRICE_DECIMALS = 8;
+//     uint8 public constant QTY_DECIMALS = 10;
+//     uint8 public constant USD_DECIMALS = 18;
+CONST.TARGET_TYPE_CRYPTO = 0;
+CONST.TARGET_TYPE_STOCKS = 1;
+CONST.TARGET_TYPE_FOREX = 2;
+CONST.TARGET_TYPE_INDICES = 3;
+CONST.TARGET_TYPE_COMMODITIES = 4;
+CONST.TARGET_STATUS_NORNAL = 0;
+CONST.TARGET_STATUS_DISABLE_OPEN = 1;
+CONST.TARGET_STATUS_DISABLE_CLOSE = 2;
+CONST.TARGET_STATUS_PAUSE = 3;
+CONST.TRADE_TYPE_OPEN = 1;
+CONST.TRADE_TYPE_CLOSE = 2;
+CONST.TRADE_STATE_PENDING = 0;
+CONST.TRADE_STATE_DONE = 1;
+CONST.POSITION_EXIT_REASON_NULL = 0;
+CONST.POSITION_EXIT_REASON_USER_CLOSE = 1;
+CONST.POSITION_EXIT_REASON_TP = 2;
+CONST.POSITION_EXIT_REASON_SL = 3;
+CONST.POSITION_EXIT_REASON_LQ = 4;
+CONST.POSITION_TYPE_NULL = 0;
+CONST.POSITION_TYPE_MARKET = 1;
+CONST.POSITION_TYPE_BOOST = 2;
+CONST.RATIO_DECIMALS = 4;
+CONST.PRICE_DECIMALS = 8;
+CONST.QTY_DECIMALS = 10;
+CONST.USD_DECIMALS = 18;
+CONST.LIQUIDATION = "150000";
