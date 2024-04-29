@@ -1,0 +1,41 @@
+{
+    "USDC": {
+        "5003": "0xF1eF9CeB797aed425e356afE5a57C7D30526839c"
+    },
+    "USDT": {
+        "5003": "0xA11201915c1170601a50e1FcC4338d23c0831E52"
+    },
+    "ALP": {
+        "5003": "0x5D30f51835AD9419DbF1586bf50B5467F008e94B"
+    },
+    "ServiceManager": {
+        "5003": "0x1CB0E59C51B4C4868Ab194a38439b5CC15Ead3cD"
+    },
+    "AgniPerp": {
+        "5003": "0x6553dfF1426beb9088502F24Cb4397fFCbD19a52"
+    },
+    "RoleService": {
+        "5003": "0x027E51398607dB2449a92710a6AC476613077E5B"
+    },
+    "VaultService": {
+        "5003": "0x25D1210C3ec96D37ABa92a2948f7bd42239e89e4"
+    },
+    "PriceService": {
+        "5003": "0x8085C0F27aC4FD96D332Da0BcE1C2555C33F9F13"
+    },
+    "LpService": {
+        "5003": "0x10AF4dfC7BCbb4be2E4f5a40930121fb78aBAb05"
+    },
+    "TargetService": {
+        "5003": "0xa6D4a595c8Ea5A75eeb7d423A2c6425996A79ea2"
+    },
+    "MarketTradeServices": {
+        "5003": "0xabd3Fc57D19511055d2a77C39F6FA4cE4098e61f"
+    },
+    "PositionService": {
+        "5003": "0xAF657bb8d765e4438a40c5FB5c188ed03243ff13"
+    },
+    "BrokerService": {
+        "5003": "0x9506951738090e98Ce81518dA2b6a34F8741b14B"
+    }
+}
