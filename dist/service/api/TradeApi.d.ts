@@ -1,0 +1,37 @@
+import { ChainType, ClosePositionEvent, OpenPosition, OpenPositionConfig, OpenPositionEvent, OpenPositionParams, PositionData, Target, TargetTick, TokenPriceBalance, TradeInfo, VaultToken } from "../vo";
+import { ConnectInfo } from "../../ConnectInfo";
+import { EventBus } from "../../wallet";
+export type EVNET_ID_INDEX = 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 | 13 | 14 | 15 | 16 | 17 | 18 | 19 | 20;
+export type KLINE_PERIOD = "1m" | "5m" | "15m" | "30m" | "1h" | "4h" | "1d" | "1w" | "1M";
+export declare class TradeEventBus extends EventBus {
+    static TOPIC_PRE_OPEN_POSITION: string;
+    static TOPIC_PAIR_PRICE: string;
+    static TOPIC_ALL_PRICE: string;
+    static TOPIC_KLINE: string;
+    static TOPIC_POSITIONS: string;
+    static SYS_TOPIC_TICKS_UPDATE: string;
+    static SYS_TOPIC_POSITIONS: string;
+    emitAll(eventName: string, data?: any): void;
+    removeAll(eventName: string): void;
+}
+export declare class TradeApi {
+    pairs(chainType: ChainType): Promise<Target[]>;
+    targetTicks(chainType: ChainType, all?: boolean): Promise<TargetTick[]>;
+    targetTickMap(chainType: ChainType): Promise<Record<string, TargetTick>>;
+    private startTickUpdateEvent;
+    private startPositionEvent;
+    private startEvent;
+    tradeInfo(chainType: ChainType, targetName: string): Promise<TradeInfo>;
+    positionHistories(chainType: ChainType, vaultTokens: VaultToken[], targets: Target[], userAddress: string, page?: number, pageSize?: number): Promise<{
+        total: number;
+        list: PositionData[];
+    }>;
+    positions(tickPrices: Record<string, TargetTick>, vaultTokens: VaultToken[], targets: Target[], chainType: ChainType, userAddress: string): Promise<PositionData[]>;
+    private updateFundingFee;
+    private updatePnl;
+    private positionRecordAbiResultToPositionData;
+    preOpenPosition(preOpenPositionParams: OpenPositionParams, tick: TargetTick, targetConfig: OpenPositionConfig): OpenPosition;
+    openPosition(connectInfo: ConnectInfo, preOpenPositionParams: OpenPositionParams, targetTick: TargetTick): Promise<OpenPositionEvent>;
+    closePosition(positionHash: string, connectInfo: ConnectInfo): Promise<ClosePositionEvent>;
+    tokens(chainType: ChainType, account?: string | undefined): Promise<TokenPriceBalance[]>;
+}
