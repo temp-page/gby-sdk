@@ -1,0 +1,68 @@
+[
+    {
+        "inputs": [
+            {
+                "internalType": "bytes32",
+                "name": "postionHash",
+                "type": "bytes32"
+            },
+            {
+                "internalType": "bytes[]",
+                "name": "priceUpdateData",
+                "type": "bytes[]"
+            }
+        ],
+        "name": "closeBoostTrade",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "bool",
+                "name": "isLong",
+                "type": "bool"
+            },
+            {
+                "internalType": "bytes32",
+                "name": "targetID",
+                "type": "bytes32"
+            },
+            {
+                "internalType": "bytes32",
+                "name": "tokenID",
+                "type": "bytes32"
+            },
+            {
+                "internalType": "uint256",
+                "name": "tokenAmount",
+                "type": "uint256"
+            },
+            {
+                "internalType": "uint256",
+                "name": "leverage",
+                "type": "uint256"
+            },
+            {
+                "internalType": "uint32",
+                "name": "takeProfit",
+                "type": "uint32"
+            },
+            {
+                "internalType": "bytes[]",
+                "name": "priceUpdateData",
+                "type": "bytes[]"
+            },
+            {
+                "internalType": "bytes32",
+                "name": "referral",
+                "type": "bytes32"
+            }
+        ],
+        "name": "openBoostTrade",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+    }
+]
