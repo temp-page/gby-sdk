@@ -1,0 +1,31 @@
+import { BaseAbi } from "./BaseAbi";
+import type { ConnectInfo } from "../../ConnectInfo";
+import { TransactionEvent } from "../vo";
+import { ContractCall } from "../../mulcall";
+export declare class ReferralServiceContract extends BaseAbi {
+    constructor(connectInfo: ConnectInfo);
+    addReferral(referralLiteral: string, _referralAddress: string): Promise<TransactionEvent>;
+    removeReferralByID(referralID: string): Promise<TransactionEvent>;
+    bindAccountToReferral(referralLiteral: string, _account: string): Promise<TransactionEvent>;
+    bindAccountToReferralID(_referralID: string, _account: string): Promise<TransactionEvent>;
+    unbindAccountFromReferral(_account: string): Promise<TransactionEvent>;
+    bindAddressToReferral(_defaultDiscount: string): Promise<TransactionEvent>;
+    setDefaultFeeDiscount(_defaultDiscount: string): Promise<TransactionEvent>;
+    removeReferral(_referral: string): Promise<TransactionEvent>;
+    updateReferralFeeDiscount(_referral: string, _newDiscount: string): Promise<TransactionEvent>;
+    setDefaultFeeShare(_defaultShare: string): Promise<TransactionEvent>;
+    updateReferralFeeShare(_referral: string, _newShare: string): Promise<TransactionEvent>;
+    multicall_getConfigForReferral(_referral: string): ContractCall<[string, string, string]>;
+    multicall_listReferrals(): ContractCall<[string, string, string, string][]>;
+    multicall_getReferralIDByAccountAddress(account: string): ContractCall<string>;
+    multicall_getReferralIDByLiteral(referralLiteral: string): ContractCall<string>;
+    multicall_getReferralByReferralID(_referralID: string): ContractCall<string>;
+    multicall_getReferrerAddressByReferralID(_referralID: string): ContractCall<string>;
+    multicall_getReferralbyReferrerAddress(_referrerAddress: string): ContractCall<string>;
+    multicall_getDefaultFeeDiscount(): ContractCall<string>;
+    multicall_getReferralList(): ContractCall<[string[], string[]]>;
+    multicall_getReferralLiteral(_referral: string): ContractCall<string>;
+    multicall_getReferralFeeDiscount(_referral: string): ContractCall<string>;
+    multicall_getDefaultFeeShare(): ContractCall<string>;
+    multicall_getReferralFeeShare(_referral: string): ContractCall<string>;
+}
