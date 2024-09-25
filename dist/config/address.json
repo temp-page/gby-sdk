@@ -1,0 +1,53 @@
+{
+    "USDC": {
+        "5003": "0xf18000235C9FA0a202e09dCFBFCB7783687Beee4"
+    },
+    "USDT": {
+        "5003": "0xc8aF29A513d58628C8D2C816e4b525f95dFE7adB"
+    },
+    "ALP": {
+        "5003": "0x8c6C46C205c3D774498856bE29413bAd1aA56087"
+    },
+    "ServiceManager": {
+        "5003": "0x40A9F8fE6472D9f35B645490dE1e459267b45fBE"
+    },
+    "AgniPerp": {
+        "5003": "0x55761601eCC201943409B75422A414328573852F"
+    },
+    "RoleService": {
+        "5003": "0xC2480f0619390096c3585d7e5E71B3f3Aed1a286"
+    },
+    "VaultService": {
+        "5003": "0x874709840A1E178C9F9a7507AfC506155255E916"
+    },
+    "PriceService": {
+        "5003": "0xce4A8a32bB058B5FecdAD38F285B33319DC23CB6"
+    },
+    "LpService": {
+        "5003": "0x28D841cC10286848ba42c1FB9ecc3d94A114f495"
+    },
+    "TargetService": {
+        "5003": "0x4a795B4D80add74f343d97062f7Bc609e5FEf1Dd"
+    },
+    "ReferralService": {
+        "5003": "0x3872B7ca8685a56414ea6a85cf0f76365aceEeFC"
+    },
+    "KeeperService": {
+        "5003": "0xa7abF533A8145f5D1346149c18389633Ac06b8bD"
+    },
+    "PositionService": {
+        "5003": "0x6951FEd105E4Ead10D26bA5F7ed26d7E683e223e"
+    },
+    "BoostTradeServices": {
+        "5003": "0x61b47839778D0ea4f0344e78c0c669C039810Af5"
+    },
+    "MarketTradeServices": {
+        "5003": "0x5106F3Ab1518cD76dEc443dd5840C62b3CEc5c15"
+    },
+    "FBTC": {
+        "5003": "0x60D809E769c5A34faB9d6110B3E332eB706c6d11"
+    },
+    "mETH": {
+        "5003": "0x76a9d6C4A34F5EC014152F713455dB7E3f0B4E1E"
+    }
+}
